@@ -3,5 +3,17 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+  <display-name>NewSCMInfo3</display-name>
+  <description>Show manifest entry  as plain text</description>
+
+  <servlet>
+  	<servlet-name>SCMInfoServlet</servlet-name>
+  	<servlet-class>se.puredelivery.util.SCMInfoServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>SCMInfoServlet</servlet-name>
+  	<url-pattern>/</url-pattern>
+  </servlet-mapping>
+
 </web-app>
